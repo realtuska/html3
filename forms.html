@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Заповніть форму:</h1>
+        <form method="post" action="https://formspree.io/tanya@zebrasus.com">
+            <label for="client-name">Client name:</label>
+            <input type="text" name="client-name" id="client-name" required>
+            <br><br>
+            <label>
+                    Client email:
+                    <input type="email" name="client-email" required>
+                </label>
+            <br><br>
+            <label>Gender:</label>
+            <label>
+                    <input type="radio" name="client-gender" value="male">Male
+                </label>
+            <label>
+                    <input type="radio" name="client-gender" value="female">Female
+                </label>
+            <label>
+                    <input type="radio" name="client-gender" value="other">Other
+                </label><br><br>
+            <label>
+                    Car plate number:<input type="text" name="car-plate" 
+                    pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}" title="AB1234CD"
+                    placeholder="AB1234CD">
+                </label>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
